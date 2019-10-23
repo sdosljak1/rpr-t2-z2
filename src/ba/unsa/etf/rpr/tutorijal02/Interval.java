@@ -18,6 +18,14 @@ public class Interval {
     public Interval() {
         pocetna = 0;
         krajnja = 0;
+        pocetnaPripada = false;
+        krajnjaPripada = false;
     }
+
+    public boolean isNull() {
+        if( pocetna == krajnja )return true;
+        return false;
+    }
+
 
 }
